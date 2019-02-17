@@ -5,13 +5,13 @@
   "author": "Poy Chang <poypost@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "npm": "^6.1.0"
+    "npm": "^6.8.0"
   },
   "devDependencies": {
     "bestzip": "^1.1.4",
     "css-loader": "^0.28.1",
     "extract-text-webpack-plugin": "^2.1.0",
-    "node-sass": "^4.7.2",
+    "node-sass": "^4.11.0",
     "sass-loader": "^6.0.7",
     "style-loader": "^0.17.0",
     "webpack": "^2.4.1",
