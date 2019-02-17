@@ -3,7 +3,7 @@
   "name": "Github Dark Theme",
   "short_name": "Github Dark Theme",
   "description": "How to protect your eyes from computer screens?",
-  "version": "0.9.23",
+  "version": "0.9.24",
   "content_scripts": [
     {
       "matches": [

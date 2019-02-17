@@ -12,6 +12,12 @@ npm run version+
 npm run build
 ```
 
+Or using Python
+
+```
+python scripts/build.py
+```
+
 Use Codemirror styles from https://github.com/StylishThemes/GitHub-Dark/tree/master/themes/codemirror
 
 Project forked from [vovanmix/github-dark-theme](https://github.com/vovanmix/github-dark-theme).
