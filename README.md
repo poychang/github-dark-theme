@@ -12,7 +12,7 @@ npm run version+
 npm run build
 ```
 
-Or using Python
+Using Python, double click on build.bat or type in
 
 ```
 python scripts/build.py
