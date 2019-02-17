@@ -1,3 +1,5 @@
+# NOTE: RUN THIS FILE IN PROJECT DIRECTORY NOT ON ITS OWN
+# TODO: Add version updater?
 import os
 import sass
 from pip._internal import main as pip
@@ -11,9 +13,10 @@ except ImportError:
     pip(['install', '--user', 'libsass'])
     import sass
 
-
-zf_firefox = zipfile.ZipFile('Github Dark Theme (Firefox).zip', 'w')
-zf_chrome = zipfile.ZipFile('Github Dark Theme (Chrome).zip', 'w')
+if not os.path.exists('Builds'):
+    os.makedirs('Builds')
+zf_firefox = zipfile.ZipFile('Builds/Github Dark Theme (Firefox).zip', 'w')
+zf_chrome = zipfile.ZipFile('Builds/Github Dark Theme (Chrome).zip', 'w')
 
 # add manifiest.json to archive
 zf_firefox.write('dist/manifest.json', 'manifest.json')
