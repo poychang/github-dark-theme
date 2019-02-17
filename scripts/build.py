@@ -16,7 +16,7 @@ zf_firefox = zipfile.ZipFile('Github Dark Theme (Firefox).zip', 'w')
 zf_chrome = zipfile.ZipFile('Github Dark Theme (Chrome).zip', 'w')
 
 # add manifiest.json to archive
-zf_firefox.write('firefox/manifest.json', 'manifest.json')
+zf_firefox.write('dist/manifest.json', 'manifest.json')
 zf_chrome.write('dist/manifest.json', 'manifest.json')
 
 # add icons to archive

@@ -1,24 +1,17 @@
 {
-  "manifest_version": 2,
-  "name": "Github Dark Theme",
-  "short_name": "Github Dark Theme",
-  "description": "How to protect your eyes from computer screens?",
-  "version": "0.9.24",
-  "content_scripts": [
-    {
-      "matches": [
-        "https://github.com/*",
-        "https://gist.github.com/*"
-      ],
-      "run_at": "document_start",
-      "css": [
-        "app/app.css"
-      ]
+    "manifest_version": 2,
+    "name": "Github Dark Theme",
+    "short_name": "Github Dark Theme",
+    "description": "A Dark theme for all of Github based on Atom One Dark.",
+    "version": "0.9.24",
+    "content_scripts": [{
+        "matches": ["https://github.com/*", "https://gist.github.com/*"],
+        "run_at": "document_start",
+        "css": ["app/app.css"]
+    }],
+    "icons": {
+        "16": "icons/icon16.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
     }
-  ],
-  "icons": {
-    "16": "icons/icon16.png",
-    "48": "icons/icon48.png",
-    "128": "icons/icon128.png"
-  }
 }
