@@ -1,0 +1,17 @@
+{
+   "content_scripts": [ {
+      "css": [ "app/app.css" ],
+      "matches": [ "https://github.com/*", "https://gist.github.com/*" ],
+      "run_at": "document_start"
+   } ],
+   "description": "A Dark theme for Github made by Poy Chang (poypost@gmail.com) and ported to Firefox by me.",
+   "icons": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+   },
+   "manifest_version": 2,
+   "name": "Github Dark Theme",
+   "short_name": "Github Dark Theme",
+   "version": "0.9.24"
+}
