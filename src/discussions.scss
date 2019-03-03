@@ -203,3 +203,10 @@ body {
         background-image: url('./img/progressive-disclosure-line@2x.png') !important;
     }
 }
+
+.AvatarStack-body {
+    background-color: transparent !important;
+    .avatar {
+        background-color: transparent !important;
+    }
+}
