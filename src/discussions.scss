@@ -7,6 +7,16 @@ body {
     }
     .new-discussion-timeline .previewable-comment-form .comment-form-head.tabnav {
         background: $bg-color !important;
+
+        .toolbar-item {
+            color: $text-color !important;
+        }
+    }
+    .discussion-item-header {
+        color: $text-color !important;
+    }
+    .discussion-sidebar-item {
+        color: $faded-link-color !important;
     }
     .discussion-item+.discussion-item-review {
         border-color: $border-color !important;
@@ -17,7 +27,7 @@ body {
     .discussion-item-entity {
         color: #61afef !important;
     }
-    .review-thread-reply .inline-comment-form {
+    .review-thread-reply .inline-comment-form, .review-comment .is-comment-editing {
         background-color: $comment-bg !important;
         border-color: $border-color !important;
     }
@@ -89,6 +99,13 @@ body {
     }
     .discussion-item-review .blob-wrapper {
         border-color: $border-color !important;
+    }
+    .discussion-item-icon {
+        background-color: $bg-color !important;
+        color: $bright-text-color !important;
+    }
+    .discussion-item .renamed-is, .discussion-item .renamed-was {
+        color: $bright-text-color !important;
     }
     .branch-action-body {
         background-color: $bg-color !important;
@@ -180,5 +197,9 @@ body {
         a{
             color: $text-black-color !important;
         }
+    }
+    .pagination-loader-container {
+        background-color: $bg-color !important;
+        background-image: url('./img/progressive-disclosure-line@2x.png') !important;
     }
 }

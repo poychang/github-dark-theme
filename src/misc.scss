@@ -47,3 +47,7 @@ table.capped-list tr:nth-child(even) {
 .token-scope {
     color: $bright-text-color !important;
 }
+
+.access-token .token-description {
+    color: $link-color !important;
+}

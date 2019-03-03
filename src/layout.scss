@@ -89,6 +89,9 @@ body {
     a {
         color: $link-color !important;
     }
+    .link-gray {
+        color: $faded-link-color !important;
+    }
     .link-gray-dark,
     body .link-gray-dark {
         color: $link-color !important;
@@ -279,6 +282,7 @@ body {
     }
     .Counter {
         background-color: $border-color !important;
+        color: $link-color !important;
     }
     .Box-header--blue {
         color: $link-color !important;
@@ -375,5 +379,11 @@ body {
     }
     .conversation-list-heading .inner {
         background: $dropdown-bg;
+    }
+    .application-main .flex-wrap{
+        background-color: $bg-color !important;
+    }
+    .note, .help {
+        color: $faded-link-color !important;
     }
 }

@@ -1,8 +1,13 @@
 language: node_js
 node_js:
   - "8"
-cache: yarn
 
-after_success:
-  - yarn build
-  - yarn upload
+script:
+  - npm run build
+
+deploy:
+  - provider: script
+    skip_cleanup: true
+    script: npm run upload; bash scripts/upload-amo.sh
+    on:
+      branch: master

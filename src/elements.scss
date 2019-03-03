@@ -182,6 +182,9 @@ body {
     .dropdown-item {
         color: $link-color !important;
     }
+    .dropdown-header {
+        color: $faded-link-color !important;
+    }
     .user-status-message-wrapper {
         color: $link-color !important;
     }
