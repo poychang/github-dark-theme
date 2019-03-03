@@ -3,6 +3,12 @@
 import os
 import sass
 from pip._internal import main as pip
+import json
+
+with open('manifest.json') as f:
+    data = json.load(f)
+
+version = data['version']
 
 try: import zipfile
 except ImportError:
@@ -16,7 +22,7 @@ except ImportError:
 if not os.path.exists('Builds'):
     os.makedirs('Builds')
 
-with zipfile.ZipFile('Builds/Github Dark Theme (Firefox + Chrome).zip', 'w') as zf:
+with zipfile.ZipFile(f'Builds/Github Dark Theme (Firefox + Chrome) {version}.zip', 'w') as zf:
     zf.write('dist/manifest.json', 'manifest.json')  # add manifiest.json to archive
     # add icons to archive
     for icon in os.listdir('dist/icons'):
