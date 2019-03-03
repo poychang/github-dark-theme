@@ -1,1 +1,0 @@
-python scripts/build.py
