@@ -79,6 +79,18 @@ body {
     .timeline-new-comment .timeline-comment::after {
         border-right-color: $tag-bg-color !important;
     }
+    .suggester-container .suggester {
+        background: $dropdown-bg !important;
+        
+        li {
+            color: $text-color !important;
+
+            &.navigation-focus, &:hover, &[aria-selected=true] {
+                background: #183061 !important;
+                color: $bright-text-color !important;
+            }
+        }
+    }
     .discussion-item-review .file-header {
         background-color: $border-color !important;
         border-color: $border-color !important;
