@@ -153,6 +153,9 @@ body {
     }
     .dropdown-menu {
         background-color: $dropdown-bg !important;
+        &:after {
+            border-bottom-color: $dropdown-bg !important;
+        }
         .user-status-emoji-only-header {
             background-color: $dropdown-bg !important;
         }
