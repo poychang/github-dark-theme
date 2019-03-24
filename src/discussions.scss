@@ -86,7 +86,7 @@ body {
             color: $text-color !important;
 
             &.navigation-focus, &:hover, &[aria-selected=true] {
-                background: #183061 !important;
+                background: $dropdown-bg-active !important;
                 color: $bright-text-color !important;
             }
         }
