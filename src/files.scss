@@ -40,3 +40,11 @@ table.files {
 .tree-finder .tree-browser {
     border-color: $border-color !important;
 }
+
+/* # File view */
+
+.repository-content {
+    .bg-blue-light {
+        background: transparent !important;
+    }
+}
