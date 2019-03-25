@@ -1,0 +1,11 @@
+/* # Sourcegraph Extension */
+
+.command-list {
+    .list-group-item {
+        background-color: $dropdown-bg !important;
+
+        &.active {
+            background-color: $dropdown-bg-active !important;
+        }
+    }
+}
