@@ -120,6 +120,9 @@ body {
     .select-menu-item {
         border-color: $border-color !important;
         background-color: $dropdown-bg !important;
+        &:hover, &:focus {
+            background-color: $file-row-active-bg !important;
+        }
         &.navigation-focus {
             background-color: $border-color !important;
             .description-inline,
