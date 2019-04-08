@@ -145,6 +145,7 @@ body {
         border-color: $border-color !important;
     }
     .select-menu-tabs .select-menu-tab-nav.selected,
+    .select-menu-tabs .select-menu-tab-nav[aria-selected="true"],
     .select-menu-tabs a.selected {
         background-color: $dropdown-bg !important;
         color: $link-color-selected !important;
@@ -153,6 +154,9 @@ body {
     .select-menu-tabs .select-menu-tab-nav:hover,
     .select-menu-tabs a:hover {
         color: $link-color-selected !important;
+    }
+    .select-menu-tabs .select-menu-tab-nav[aria-selected="true"] {
+        border-bottom-color: $dropdown-bg !important;
     }
     .dropdown-menu {
         background-color: $dropdown-bg !important;
