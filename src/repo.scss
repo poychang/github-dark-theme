@@ -58,6 +58,14 @@ body {
         border-color: $border-color !important;
         border-top: 0 !important;
     }
+    .branches {
+        .Box-row {
+            &--blue:last-of-type {
+                background-color: $dropdown-bg !important;
+                border-color: $border-color !important;
+            }
+        }
+    }
     .release-label {
         background-color: $tag-bg-color !important;
     }
