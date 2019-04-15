@@ -1,0 +1,50 @@
+.app-container.container {
+  h1, h2, h3, h4, h5 {
+    color: $link-color !important;
+  }
+
+  table{
+    background-color: $bg-color !important;
+
+    tr{
+      background-color: $bg-color !important;
+    }
+  }
+
+  .content {
+    color: $text-color !important;
+
+    .intro {
+      color: $text-color !important;
+    }
+  }
+
+  .sidebar-menu{
+    background-color: $bg-color !important;
+  }
+  .sidebar-module{
+    li{
+      background-color: $bg-color !important;
+
+      a:not(.arrow-btn){
+        &:hover{
+          background-color: $dropdown-bg-active !important;
+        }
+      }
+    }
+
+    .disable{
+      &>a{
+        background-color: $dropdown-bg-active !important;
+      }
+    }
+  }
+
+  .js-current{
+    .standalone{
+      a{
+        background-color: $dropdown-bg-active !important;
+      }
+    }
+  }
+}
