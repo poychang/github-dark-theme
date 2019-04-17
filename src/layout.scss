@@ -89,6 +89,17 @@ body {
     a:not(.IssueLabel):not(.IssueLabel--big) {
         color: $link-color !important;
     }
+    div.commit-build-statuses {
+        .text-green {
+            color: $text-green-color !important;
+        }
+        .text-red {
+            color: $text-red-color !important;
+        }
+        .bg-pending {
+            color: $bg-pending-color !important;
+        }
+    }
     .link-gray {
         color: $faded-link-color !important;
     }
