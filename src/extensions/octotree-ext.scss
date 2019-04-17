@@ -1,0 +1,25 @@
+/* # Octotree Extension */
+
+.octotree-sidebar.octotree-github-sidebar {
+    .octotree-views {
+        background-color: $dropdown-bg !important;
+        border-right: 0 solid !important;
+        .octotree-tree-view {
+            .jstree-default
+                .jstree-no-dots
+                .jstree-closed
+                > .jstree-ocl::before {
+                color: $bright-text-color !important;
+            }
+            .jstree-anchor {
+                color: $bright-text-color !important;
+            }
+            .jstree-wholerow-clicked {
+                background: $dropdown-bg-active !important;
+            }
+            .jstree-wholerow-hovered {
+                background: $dropdown-bg-active !important;
+            }
+        }
+    }
+}

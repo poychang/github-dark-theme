@@ -86,7 +86,7 @@ body {
         background-color: $dropdown-bg !important;
         border-color: $border-color !important;
     }
-    a {
+    a:not(.IssueLabel):not(.IssueLabel--big) {
         color: $link-color !important;
     }
     .link-gray {

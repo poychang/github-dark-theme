@@ -16,6 +16,6 @@
 @import "organization.scss";
 @import "issues.scss";
 @import "auth.scss";
-@import "sourcegraph-ext.scss";
-@import "octotree-ext.scss";
 @import "developer.scss";
+@import "extensions/sourcegraph-ext.scss";
+@import "extensions/octotree-ext.scss";

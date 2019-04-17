@@ -105,6 +105,9 @@ body {
     .review-summary::before {
         border-bottom-color: $tag-bg-color !important;
     }
+    .review-summary-form-wrapper {
+        background-color: $comment-bg !important;
+    }
     .discussion-timeline-actions {
         background-color: $bg-color !important;
         border-color: $border-color !important;
@@ -201,13 +204,6 @@ body {
     .commit-desc {
         pre {
             color: $text-color;
-        }
-    }
-    .IssueLabel{
-        color: $text-black-color !important;
-
-        a{
-            color: $text-black-color !important;
         }
     }
     .pagination-loader-container {
