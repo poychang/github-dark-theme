@@ -8,6 +8,11 @@
     color: $text-color !important;
 }
 
+/* # Insights Contributors */
+.viz, .capped-card-content, .graph-canvas{
+    background: $comment-bg !important;
+}
+
 /* # Insights Traffic */
 
 .boxed-group-inner {
