@@ -2,25 +2,56 @@
 <html>
     <head>
         <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>GitHub Dark Theme</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css" />
         <style>
             body {
-                font-family: 'Segoe UI', 'Lucida Grande', Tahoma, sans-serif;
-                font-size: 100%;
                 width: 400px;
             }
         </style>
     </head>
     <body ng-app="app">
         <div ng-controller="popupController as ctrl">
-            <h2>{{ ctrl.title }}</h2>
-            <!-- <input type="text" placeholder="Add Domain..." />
-            <ul>
-                <li ng-repeat="domain in ctrl.domainList">
-                    {{ domain }}
-                    <button>X</button>
-                </li>
-            </ul> -->
+            <section class="section">
+                <div class="container">
+                    <h1 class="title">GitHub Dark Theme</h1>
+                    <p class="subtitle">change appearance of <strong>your domain</strong> into a dark theme!</p>
+                    <table class="table narrower is-bordered is-hoverable">
+                        <thead>
+                            <tr>
+                                <th>Domain</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="domain in ctrl.domainList track by $index">
+                                <td>{{ domain }}</td>
+                                <td>
+                                    <button class="button is-small is-danger" ng-click="ctrl.remove(domain)">
+                                        Remove
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input
+                                        class="input is-small"
+                                        type="text"
+                                        placeholder="add your domain..."
+                                        ng-model="ctrl.yourDomain"
+                                    />
+                                </td>
+                                <td><button class="button is-small is-primary" ng-click="ctrl.add()">Add</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>
+                        Experimental feature, may not work properly. You can
+                        <button class="button is-small is-primary" ng-click="ctrl.reset()">RESET</button> domain list.
+                    </p>
+                </div>
+            </section>
         </div>
 
         <script src="vendor.js"></script>

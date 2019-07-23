@@ -1,4 +1,6 @@
 function fetchDomainString(url: string): string {
+    if (!url) return '';
+
     let result = url.match(
         /(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z0-9][a-z0-9-]{0,61}[a-z0-9]/g
     );
