@@ -9,7 +9,6 @@ module app {
     class PopupController {
         static $inject = ['$scope'];
         private scope: IPopupScope;
-
         public domainList: string[];
         public yourDomain: string;
 
@@ -20,7 +19,7 @@ module app {
 
         private init = () => {
             storage.sync
-                .get('domainList')
+                .get(config.nameOfDomainList)
                 .then(data => {
                     this.domainList = data.domainList as string[];
                     this.scope.$apply();
@@ -44,7 +43,7 @@ module app {
         };
 
         public remove = (domain: string) => {
-            this.domainList = [...this.domainList.filter(p => p !== domain)];
+            this.domainList = [...this.domainList.filter(d => d !== domain)];
             storage.sync.set({ domainList: this.domainList });
         };
 

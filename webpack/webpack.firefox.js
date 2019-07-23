@@ -10,7 +10,7 @@ module.exports = merge(common, {
         filename: '[name].js',
     },
     plugins: [
-        // Copy manifest
+        // copy manifest
         new CopyPlugin([{ from: './manifest-firefox.json', to: '../manifest.json' }], {
             context: 'src/manifest',
         }),

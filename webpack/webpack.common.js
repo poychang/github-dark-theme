@@ -55,13 +55,23 @@ module.exports = {
         extractCSS,
         // exclude locale files in moment
         new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
-        // Copy html pages
+        // copy html pages
         new CopyPlugin([{ from: '.', to: '../app' }], {
             context: 'src/pages',
         }),
-        // Copy icons
+        // copy icons
         new CopyPlugin([{ from: '.', to: '../icons' }], {
             context: 'src/icons',
         }),
+        // copy bulma css
+        new CopyPlugin(
+            [
+                { from: './bulma/css/bulma.min.css', to: './bulma.min.css' },
+                { from: './bulma/css/bulma.css.map', to: './bulma.css.map' },
+            ],
+            {
+                context: 'node_modules',
+            }
+        ),
     ],
 };

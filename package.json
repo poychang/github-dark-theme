@@ -12,6 +12,7 @@
         "Vinyl Darkscratch <vinyldarkscratch@gmail.com> (https://www.queengoob.org)"
     ],
     "scripts": {
+        "serve": "live-server",
         "watch": "webpack --config webpack/webpack.dev.js --watch",
         "build": "webpack --config webpack/webpack.prod.js",
         "build-chrome": "webpack --config webpack/webpack.chrome.js",
@@ -25,24 +26,26 @@
     },
     "dependencies": {
         "@types/angular": "^1.6.55",
-        "angular": "^1.7.8"
+        "angular": "^1.7.8",
+        "bulma": "^0.7.5"
     },
     "devDependencies": {
         "@types/chrome": "0.0.86",
         "@types/jquery": "^3.3.30",
         "@wext/shipit": "^0.2.0",
         "copy-webpack-plugin": "^5.0.3",
-        "css-loader": "^3.0.0",
+        "css-loader": "^3.1.0",
         "extract-text-webpack-plugin": "^4.0.0-beta.0",
+        "live-server": "^1.2.1",
         "node-sass": "^4.12.0",
         "rimraf": "^2.6.3",
         "sass-loader": "^7.1.0",
         "style-loader": "^0.23.1",
-        "ts-loader": "^5.4.5",
-        "typescript": "~3.4.5",
+        "ts-loader": "^6.0.4",
+        "typescript": "~3.5.3",
         "url-loader": "^2.1.0",
-        "webpack": "~4.17.3",
-        "webpack-cli": "~3.1.2",
+        "webpack": "~4.37.0",
+        "webpack-cli": "~3.3.6",
         "webpack-merge": "~4.2.1"
     }
 }
