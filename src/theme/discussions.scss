@@ -11,6 +11,14 @@ body {
         .toolbar-item {
             color: $text-color !important;
         }
+
+        .tabnav-tab{
+            &.selected,
+            &[aria-selected=true]{
+                background: $bg-color !important;
+                color: $text-color !important;
+            }
+        }
     }
     .discussion-item-header {
         color: $text-color !important;
