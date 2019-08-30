@@ -166,6 +166,14 @@ body {
     }
     .diffbar {
         background-color: $tag-bg-color !important;
+
+        .stale-files-tab{
+            background-color: $bg-color !important;
+            
+            & > a{
+                color: $text-color !important;
+            }
+        }
     }
     .diffstat {
         color: #A7A7A7 !important;
