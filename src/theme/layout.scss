@@ -86,7 +86,7 @@ body {
         background-color: $dropdown-bg !important;
         border-color: $border-color !important;
     }
-    a:not(.IssueLabel):not(.IssueLabel--big) {
+    a:not(.IssueLabel):not(.IssueLabel--big):not(.lh-condensed-ultra) {
         color: $link-color !important;
     }
     div.commit-build-statuses {
