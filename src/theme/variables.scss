@@ -45,3 +45,19 @@ $bg-pending-color: #dbab09;
 
 $alert-bg-color: #1e3f56;
 $alert-warning-bg-color: #d8937f;
+
+// Profile contributions graph variables
+$contrib-color: #196127;
+$contrib-color-1: #000000;
+$contrib-color-2: lighten($contrib-color, 50%);
+$contrib-color-3: lighten($contrib-color, 30%);
+$contrib-color-4: lighten($contrib-color, 15%);
+$contrib-color-5: $contrib-color;
+/*
+// Inverted contribution colors (dark to light)
+$contrib-color-1: darken($contrib-color, 15%);
+$contrib-color-2: $contrib-color;
+$contrib-color-3: lighten($contrib-color, 15%);
+$contrib-color-4: lighten($contrib-color, 30%);
+$contrib-color-5: lighten($contrib-color, 50%);
+*/
