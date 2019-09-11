@@ -300,7 +300,7 @@ body {
         background-color: $dropdown-bg !important;
         border-color: $border-color !important;
     }
-    .Box {
+    :not(.markdown-body code) .Box {
         background-color: #31363f !important;
         border-color: $border-color !important;
     }
