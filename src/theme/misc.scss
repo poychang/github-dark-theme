@@ -77,3 +77,16 @@ table.capped-list tr:nth-child(even) {
     border-radius: 4px;
     background-color: $light-border-color;
 }
+
+
+/* Emoji Picker */
+.js-emoji-picker {
+    .js-emoji-button {
+        background-color: $bg-color !important;
+        justify-content: center !important;
+
+        &:hover {
+            background-color: $dropdown-bg !important;
+        }
+    }
+}
