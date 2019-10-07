@@ -1,7 +1,7 @@
 const config = {
     storage: {
         nameOfDomainList: 'domainList',
-        nameOfPrefersScheme: 'usePrefersScheme'
+        nameOfPrefersScheme: 'usePrefersScheme',
     },
     defaultDomainList: ['github.com'],
     excludeUrlList: ['github.com/explore', 'github.com/marketplace'],

@@ -11,13 +11,9 @@
     },
     "content_scripts": [
         {
-            "matches": [
-                "https://*.github.com/*"
-            ],
+            "matches": ["https://*.github.com/*"],
             "run_at": "document_start",
-            "css": [
-                "app/app.css"
-            ]
+            "css": ["app/app.css"]
         }
     ],
     "icons": {

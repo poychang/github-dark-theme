@@ -47,8 +47,8 @@ body {
                 span.percent {
                     font-size: 11px !important;
                 }
-                &>a,
-                &>span {
+                & > a,
+                & > span {
                     color: $link-color !important;
                 }
             }

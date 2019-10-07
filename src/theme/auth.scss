@@ -7,20 +7,20 @@
 }
 
 .oauth-app-info-container {
-	.keys {
-		dt {
-			color: $text-color !important;
-		}
-		dd {
-			color: $link-color !important;
-		}
-	}
+    .keys {
+        dt {
+            color: $text-color !important;
+        }
+        dd {
+            color: $link-color !important;
+        }
+    }
 }
 
 .access-token .last-used {
-	color: $faded-link-color !important;
+    color: $faded-link-color !important;
 }
 
 .logo-upload-container .upload-state p {
-	color: $link-color !important;
+    color: $link-color !important;
 }

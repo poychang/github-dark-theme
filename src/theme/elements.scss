@@ -120,7 +120,8 @@ body {
     .select-menu-item {
         border-color: $border-color !important;
         background-color: $dropdown-bg !important;
-        &:hover, &:focus {
+        &:hover,
+        &:focus {
             background-color: $file-row-active-bg !important;
         }
         &.navigation-focus {
@@ -149,7 +150,7 @@ body {
         border-color: $border-color !important;
     }
     .select-menu-tabs .select-menu-tab-nav.selected,
-    .select-menu-tabs .select-menu-tab-nav[aria-selected="true"],
+    .select-menu-tabs .select-menu-tab-nav[aria-selected='true'],
     .select-menu-tabs a.selected {
         background-color: $dropdown-bg !important;
         color: $link-color-selected !important;
@@ -159,7 +160,7 @@ body {
     .select-menu-tabs a:hover {
         color: $link-color-selected !important;
     }
-    .select-menu-tabs .select-menu-tab-nav[aria-selected="true"] {
+    .select-menu-tabs .select-menu-tab-nav[aria-selected='true'] {
         border-bottom-color: $dropdown-bg !important;
     }
     .dropdown-menu {

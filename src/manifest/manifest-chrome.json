@@ -8,15 +8,9 @@
         "default_popup": "app/popup.html"
     },
     "background": {
-        "scripts": [
-            "app/vendor.js",
-            "app/background.js"
-        ]
+        "scripts": ["app/vendor.js", "app/background.js"]
     },
-    "permissions": [
-        "storage",
-        "<all_urls>"
-    ],
+    "permissions": ["storage", "<all_urls>"],
     "icons": {
         "16": "icons/icon16.png",
         "48": "icons/icon48.png",
