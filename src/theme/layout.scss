@@ -300,7 +300,7 @@ body {
         background-color: $dropdown-bg !important;
         border-color: $border-color !important;
     }
-    :not(.markdown-body code) .Box {
+    *:not(code) .Box {
         background-color: $block-bg !important;
         border-color: $border-color !important;
     }
