@@ -24,6 +24,9 @@ code {
     blockquote {
         border-color: $border-color !important;
     }
+    img {
+        background-color: transparent !important;
+    }
     code,
     tt {
         background-color: $tag-bg-color !important;
