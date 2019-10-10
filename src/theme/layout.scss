@@ -48,11 +48,11 @@ body {
         color: $link-color !important;
     }
     .blankslate {
-        background-color: #31363f !important;
+        background-color: $block-bg !important;
         border-color: $border-color !important;
     }
     .menu {
-        background-color: #31363f !important;
+        background-color: $block-bg !important;
         border-color: $border-color !important;
     }
     .menu-item {
@@ -86,7 +86,7 @@ body {
         background-color: $dropdown-bg !important;
         border-color: $border-color !important;
     }
-    a:not(.IssueLabel):not(.IssueLabel--big) {
+    :not(.commit-build-statuses) > a:not(.IssueLabel):not(.IssueLabel--big):not(.lh-condensed-ultra) {
         color: $link-color !important;
     }
     div.commit-build-statuses {
@@ -228,7 +228,7 @@ body {
         border-top: 1px solid $border-color !important;
     }
     .dashboard-notice {
-        background-color: #31363f !important;
+        background-color: $block-bg !important;
         border: solid 1px $border-color !important;
         h2 {
             color: $text-color !important;
@@ -248,13 +248,13 @@ body {
     }
     .commit .commit-title,
     .commit .commit-title a {
-        color: #BBB2A9 !important;
+        color: #bbb2a9 !important;
     }
     .commits-list-item.navigation-focus {
         background: $comment-bg !important;
     }
     .commit-group-title {
-        color: #A79F96 !important;
+        color: #a79f96 !important;
     }
     .commit-tease-contributors {
         background-color: $comment-bg !important;
@@ -300,8 +300,8 @@ body {
         background-color: $dropdown-bg !important;
         border-color: $border-color !important;
     }
-    .Box {
-        background-color: #31363f !important;
+    *:not(code) .Box {
+        background-color: $block-bg !important;
         border-color: $border-color !important;
     }
     .full-commit {
@@ -315,7 +315,7 @@ body {
             color: $link-color !important;
         }
         .commit-meta {
-            background-color: #31363f !important;
+            background-color: $block-bg !important;
             border-color: $border-color !important;
         }
     }

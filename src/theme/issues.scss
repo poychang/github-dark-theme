@@ -1,15 +1,21 @@
-.task-progress .progress-bar .progress {
-    background-color: $faded-link-color !important;
-}
+body {
+    .task-progress .progress-bar .progress {
+        background-color: $faded-link-color !important;
+    }
 
-.new-label {
-	background-color: $comment-bg !important;
+    .new-label {
+        background-color: $comment-bg !important;
 
-	.js-new-label-color {
-		color: $link-color !important;
-	}
-}
+        .js-new-label-color {
+            color: $link-color !important;
+        }
+    }
 
-.TimelineItem-break{
-	background-color: $bg-color !important;
+    .TimelineItem-body {
+        color: $text-color !important;
+    }
+
+    .TimelineItem-break {
+        background-color: $bg-color !important;
+    }
 }

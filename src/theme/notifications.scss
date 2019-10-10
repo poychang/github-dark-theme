@@ -13,7 +13,7 @@
         border-color: $border-color !important;
     }
 
-    .list-group-item[aria-selected="true"],
+    .list-group-item[aria-selected='true'],
     .list-group-item.navigation-focus {
         background-color: $tag-bg-color !important;
     }

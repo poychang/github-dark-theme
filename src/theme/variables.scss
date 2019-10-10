@@ -6,6 +6,7 @@ $tag-bg-color: #1b1d23;
 $file-row-active-bg: #434852;
 $private-bg: #464542;
 $comment-bg: #333842;
+$block-bg: #31363f;
 
 $border-color: #181a1f;
 $light-border-color: #555;
@@ -24,7 +25,7 @@ $link-color-selected: #ccc;
 $faded-link-color: #8a939e;
 
 $diff-addition: #103605;
-$diff-deletion: #540B07;
+$diff-deletion: #540b07;
 $diff-addition-accent: #23691b;
 $diff-deletion-accent: #9a0a00;
 $diff-accent-font-color: #ccc;
@@ -45,3 +46,19 @@ $bg-pending-color: #dbab09;
 
 $alert-bg-color: #1e3f56;
 $alert-warning-bg-color: #d8937f;
+
+// Profile contributions graph variables
+$contrib-color: #196127;
+$contrib-color-1: #ebeaf0;
+$contrib-color-2: lighten($contrib-color, 50%);
+$contrib-color-3: lighten($contrib-color, 30%);
+$contrib-color-4: lighten($contrib-color, 15%);
+$contrib-color-5: $contrib-color;
+/*
+// Inverted contribution colors (dark to light)
+$contrib-color-1: darken($contrib-color, 15%);
+$contrib-color-2: $contrib-color;
+$contrib-color-3: lighten($contrib-color, 15%);
+$contrib-color-4: lighten($contrib-color, 30%);
+$contrib-color-5: lighten($contrib-color, 50%);
+*/
