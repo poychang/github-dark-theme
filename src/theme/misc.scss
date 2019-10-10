@@ -77,3 +77,18 @@ table.capped-list tr:nth-child(even) {
     border-radius: 4px;
     background-color: $light-border-color;
 }
+
+/* Lock Icon - always gold */
+.octicon.octicon-lock {
+    color: #dbab09 !important;
+}
+
+/* Suggestions dropdown (i.e. Emoji Picker) */
+.suggester {
+    background-color: $bg-color !important;
+    border-color: $border-color !important;
+
+    li {
+        border-bottom: 1px solid $border-color !important;
+    }
+}
