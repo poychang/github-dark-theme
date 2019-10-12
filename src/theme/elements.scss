@@ -65,10 +65,13 @@ body {
     .btn:disabled {
         background-color: $dropdown-bg !important;
         color: $link-color !important;
+        opacity: 0.5 !important;
+        cursor: not-allowed !important;
     }
     .btn-outline.disabled,
     .btn-outline:disabled {
         background-color: $dropdown-bg !important;
+        cursor: not-allowed !important;
     }
     .gh-header {
         background-color: transparent !important;
