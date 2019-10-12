@@ -391,8 +391,14 @@ body {
     .conversation-list-heading .inner {
         background: $dropdown-bg;
     }
-    .application-main .flex-wrap {
-        background-color: $bg-color !important;
+    .application-main {
+        .flex-wrap {
+            background-color: $bg-color !important;
+        }
+
+        & > main > div.border-bottom.border-gray-light {
+            background-color: $bg-color !important;
+        }
     }
     .note,
     .help {
