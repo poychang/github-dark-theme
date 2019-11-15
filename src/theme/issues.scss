@@ -1,6 +1,10 @@
 body {
-    .task-progress .progress-bar .progress {
+    .task-progress .progress-bar{
         background-color: $faded-link-color !important;
+    }
+
+    .task-progress .progress-bar .progress {
+        background-color: $link-color !important;
     }
 
     .new-label {
