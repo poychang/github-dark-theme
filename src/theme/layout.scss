@@ -263,6 +263,9 @@ body {
     .commit-tease-sha {
         color: $link-color !important;
     }
+    .commits blockquote {
+        color: $text-color !important;
+    }
     .reponav-item {
         &:focus,
         &:hover {
