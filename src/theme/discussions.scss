@@ -247,6 +247,11 @@ body {
         background-color: $bg-color !important;
         background-image: url('./img/progressive-disclosure-line@2x.png') !important;
     }
+    .commit-ref {
+        .user {
+            color: $link-color !important;
+        }
+    }
 }
 
 .AvatarStack-body {
