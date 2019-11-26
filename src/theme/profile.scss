@@ -84,7 +84,7 @@
     .contrib-legend {
         li {
             &:nth-child(1) {
-                background-color: $contrib-color-1 !important;
+                background-color: $block-bg !important;
             }
             &:nth-child(2) {
                 background-color: $contrib-color-2 !important;

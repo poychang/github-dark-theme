@@ -53,7 +53,7 @@ $scrollbar-thumb: rgba(85, 85, 85, 0.7);
 
 // Profile contributions graph variables
 $contrib-color: #196127;
-$contrib-color-1: #ebeaf0;
+$contrib-color-1: $block-bg;
 $contrib-color-2: lighten($contrib-color, 50%);
 $contrib-color-3: lighten($contrib-color, 30%);
 $contrib-color-4: lighten($contrib-color, 15%);
