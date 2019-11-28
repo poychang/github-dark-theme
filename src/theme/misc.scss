@@ -83,6 +83,10 @@ table.capped-list tr:nth-child(even) {
     color: #dbab09 !important;
 }
 
+.octicon.octicon-link {
+    color: $link-color !important;
+}
+
 /* Suggestions dropdown (i.e. Emoji Picker) */
 .suggester {
     background-color: $bg-color !important;
