@@ -91,6 +91,9 @@ body {
     .timeline-new-comment .timeline-comment::after {
         border-right-color: $tag-bg-color !important;
     }
+    .timeline-comment-label {
+        border-color: $text-color;
+    }
     .suggester-container .suggester {
         background: $dropdown-bg !important;
 
