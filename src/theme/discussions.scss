@@ -7,9 +7,13 @@ body {
     }
     .new-discussion-timeline .previewable-comment-form .comment-form-head.tabnav {
         background: $bg-color !important;
-
-        .toolbar-item {
-            color: $text-color !important;
+        
+        .toolbar-commenting {
+            background-color: transparent !important;
+            
+            .toolbar-item {
+                color: $text-color !important;
+            }
         }
 
         .tabnav-tab {
