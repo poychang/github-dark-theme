@@ -96,3 +96,7 @@ table.capped-list tr:nth-child(even) {
         border-bottom: 1px solid $border-color !important;
     }
 }
+
+.jump-to-suggestion-name mark {
+    color: $bright-text-color !important;
+}
