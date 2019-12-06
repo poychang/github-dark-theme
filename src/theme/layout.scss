@@ -227,6 +227,17 @@ body {
     .news .alert {
         border-top: 1px solid $border-color !important;
     }
+    .news .Details button {
+        border-top-color: $border-color !important;
+        
+        &:hover {
+            background: transparent !important; 
+            text-decoration: underline !important;
+        }
+    }
+    .news .Details-content--hidden li {
+        border-top-color: $border-color !important;
+    }
     .dashboard-notice {
         background-color: $block-bg !important;
         border: solid 1px $border-color !important;
