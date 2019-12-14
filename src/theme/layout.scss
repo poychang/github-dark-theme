@@ -19,6 +19,12 @@ body {
         background: $head-bg !important;
         border-color: $border-color !important;
     }
+    /* Repo label (i.e. Private, Archived) */
+    .repohead .Label--outline,
+    .repo-list .Label--outline {
+        color: $text-color !important;
+        border-color: $light-border-color !important;
+    }
     .site-header {
         background: $head-bg !important;
         border-color: $border-color !important;
