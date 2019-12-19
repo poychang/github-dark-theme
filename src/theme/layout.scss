@@ -324,6 +324,10 @@ body {
         background-color: $block-bg !important;
         border-color: $border-color !important;
     }
+    .dashboard .js-all-activity-header + div {
+        background-color: $block-bg !important;
+        border-color: $border-color !important;
+    }
     .full-commit {
         color: $link-color !important;
         background-color: $dropdown-bg !important;
