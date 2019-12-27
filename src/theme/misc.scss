@@ -100,3 +100,22 @@ table.capped-list tr:nth-child(even) {
 .jump-to-suggestion-name mark {
     color: $bright-text-color !important;
 }
+
+/* Emoji Picker-specific */
+.js-emoji-picker {
+    .js-emoji-button {
+        // background-color: $bg-color !important;
+        // background: $button-bg-image !important;
+        background: radial-gradient(circle, #424549, #535659) !important;
+        color: $link-color !important;
+        justify-content: center !important;
+
+        &:hover {
+            background: radial-gradient(circle, #535659, #424549) !important;
+        }
+
+        &.selected-emoji {
+            background: $button-active-color !important;
+        }
+    }
+}
