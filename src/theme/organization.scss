@@ -69,13 +69,19 @@
 
     /* For select menus with tabs, like the branch selector */
     .SelectMenu-filter,
-    .SelectMenu-tabs {
-        background: $block-bg;
+    .SelectMenu-tabs,
+    .SelectMenu-list,
+    .SelectMenu-modal {
+        background: $block-bg !important;
+    }
+
+    .SelectMenu-filter {
+        border-color: $block-bg !important;
     }
 
     .SelectMenu-tab[aria-selected="true"] {
-        color: white;
-        background: $block-bg;
-        border-color: $tag-bg-color;
+        color: $text-color !important;
+        background: $block-bg !important;
+        border-color: $tag-bg-color !important;
     }
 }
