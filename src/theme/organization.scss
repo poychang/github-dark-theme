@@ -61,9 +61,18 @@
         .SelectMenu-list {
             border-top: 1px solid $border-color !important;
         }
+        .SelectMenu-divider {
+            background-color: $bg-color !important;
+            border: 1px solid $border-color !important;
+        }
+        .clearfix {
+            background-color: $bg-color !important;
+        }
 
         footer {
             border-top: 1px solid $border-color !important;
+            background-color: $bg-color !important;
+            color: $bright-text-color !important;
         }
     }
 
@@ -76,12 +85,20 @@
     }
 
     .SelectMenu-filter {
-        border-color: $block-bg !important;
+        border-color: $border-bg !important;
     }
 
-    .SelectMenu-tab[aria-selected="true"] {
+    .SelectMenu-tab {
         color: $text-color !important;
-        background: $block-bg !important;
-        border-color: $tag-bg-color !important;
+
+        &[aria-selected='true'] {
+            background: $block-bg !important;
+            border-color: $tag-bg-color !important;
+        }
+
+        &:hover {
+            color: $text-color !important;
+            background: lighten($block-bg, 10%) !important;
+        }
     }
 }
