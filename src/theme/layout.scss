@@ -451,11 +451,12 @@ body {
         background-color: $bg-color !important;
     }
 }
+
 @media (min-width: 768px) {
     body {
-        &.page-responsive{
-            .pagehead{
-                background-color: $bg-color !important;
+        &.page-responsive {
+            .pagehead, .repohead.experiment-repo-nav {
+                background-color: $head-bg !important;
             }
         }
     }
