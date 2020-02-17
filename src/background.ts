@@ -19,7 +19,11 @@ const addDomainListener = () => {
 
         storage.sync.get(config.storage.nameOfDomainList).then(data => {
             console.table('Domain List', data.domainList);
-            if (isUrlInList(fetchDomainString(tab.url), data.domainList)) insertCSS(tab.id);
+            if (isUrlInList(fetchDomainString(tab.url), data.domainList)){
+				storage.sync.get('isEnabled').then(result => {					
+					if(result.isEnabled == 'true') insertCSS(tab.id);
+				});
+			}
         });
     });
 };
