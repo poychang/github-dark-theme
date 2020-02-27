@@ -26,11 +26,13 @@
     }
 }
 
+.notifications-list-item,
 li.notifications-list-item {
     background-color: $dropdown-bg !important;
     border-color: $border-color !important;
 }
 
+.notifications-list-item:hover,
 li.notifications-list-item:hover {
     background-color: $tag-bg-color !important;
 }
