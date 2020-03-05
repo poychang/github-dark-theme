@@ -122,3 +122,8 @@ table.capped-list tr:nth-child(even) {
 .qr-code-table {
     background-color: white !important;
 }
+
+/* Sponsors notice | Issue-#140 */
+.js-notice .js-notice-dismiss {
+    background: $block-bg !important;
+}
