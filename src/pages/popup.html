@@ -23,7 +23,7 @@
                     <table class="table narrower is-bordered is-fullwidth is-hoverable">
                         <thead>
                             <tr>
-                                <th class="">Domain</th>
+                                <th class="">Included Domain</th>
                                 <th class="has-text-centered">Action</th>
                             </tr>
                         </thead>
@@ -50,6 +50,42 @@
                                 </td>
                                 <td>
                                     <button class="button is-small is-fullwidth is-primary" ng-click="ctrl.add()">
+                                        Add
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table narrower is-bordered is-fullwidth is-hoverable">
+                        <thead>
+                            <tr>
+                                <th class="">Excluded Domain</th>
+                                <th class="has-text-centered">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="excludedUrl in ctrl.excludedUrlList track by $index">
+                                <td><a ng-click="ctrl.navigate(excludedUrl)">{{ excludedUrl }}</a></td>
+                                <td>
+                                    <button
+                                        class="button is-small is-fullwidth is-danger"
+                                        ng-click="ctrl.removeExcludedUrl(excludedUrl)"
+                                    >
+                                        Remove
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input
+                                        class="input is-small"
+                                        type="text"
+                                        placeholder="add your domain..."
+                                        ng-model="ctrl.yourExcludedDomain"
+                                    />
+                                </td>
+                                <td>
+                                    <button class="button is-small is-fullwidth is-primary" ng-click="ctrl.addExcludedUrl()">
                                         Add
                                     </button>
                                 </td>

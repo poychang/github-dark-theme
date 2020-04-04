@@ -11,7 +11,9 @@ module app {
         static $inject = ['$scope'];
         private scope: IPopupScope;
         public domainList: string[];
+        public excludedUrlList: string[];
         public yourDomain: string;
+        public yourExcludedDomain: string;
         public useDarkTheme: boolean;
 
         constructor($scope: IPopupScope) {
@@ -21,9 +23,10 @@ module app {
 
         private init = () => {
             storage.sync
-                .get(config.storageDomainList)
+                .get([config.storageDomainList, config.storageExcludedUrlList])
                 .then(data => {
                     this.domainList = data.domainList as string[];
+                    this.excludedUrlList = data.excludedUrlList;
                     console.log(this.domainList);
                 })
                 .catch(error => {
@@ -53,6 +56,25 @@ module app {
         public remove = (domain: string) => {
             this.domainList = [...this.domainList.filter(d => d !== domain)];
             storage.sync.set({ domainList: this.domainList });
+        };
+
+        
+        public addExcludedUrl = () => {
+            let activeTabInfo = tabs.getCurrentTab();
+            let url = this.yourExcludedDomain ? this.yourExcludedDomain : activeTabInfo.url;
+
+            this.yourExcludedDomain = '';
+
+            if (this.excludedUrlList.includes(url)) return;
+
+            this.excludedUrlList.push(url);
+            storage.sync.set({ excludedUrlList: this.excludedUrlList });
+        };
+        
+
+        public removeExcludedUrl = (url: string) => {
+            this.excludedUrlList = [...this.excludedUrlList.filter(u => u !== url)];
+            storage.sync.set({ excludedUrlList: this.excludedUrlList });
         };
 
         public reset = () => {
