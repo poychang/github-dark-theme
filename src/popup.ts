@@ -1,11 +1,11 @@
 import * as angular from 'angular';
 import { config } from './config';
-import { fetchDomainString, storage, tabs } from './libs';
+import { fetchDomainString, fetchUrlString, storage, tabs } from './libs';
 
 module app {
     'use strict';
 
-    interface IPopupScope extends angular.IScope {}
+    interface IPopupScope extends angular.IScope { }
 
     class PopupController {
         static $inject = ['$scope'];
@@ -58,19 +58,19 @@ module app {
             storage.sync.set({ domainList: this.domainList });
         };
 
-        
         public addExcludedUrl = () => {
             let activeTabInfo = tabs.getCurrentTab();
             let url = this.yourExcludedDomain ? this.yourExcludedDomain : activeTabInfo.url;
+            let domain = fetchUrlString(url);
 
             this.yourExcludedDomain = '';
 
-            if (this.excludedUrlList.includes(url)) return;
+            if (domain === '') return;
+            if (this.excludedUrlList.includes(domain)) return;
 
-            this.excludedUrlList.push(url);
+            this.excludedUrlList.push(domain);
             storage.sync.set({ excludedUrlList: this.excludedUrlList });
         };
-        
 
         public removeExcludedUrl = (url: string) => {
             this.excludedUrlList = [...this.excludedUrlList.filter(u => u !== url)];
@@ -79,8 +79,10 @@ module app {
 
         public reset = () => {
             this.domainList = config.defaultDomainList;
+            this.excludedUrlList = config.defaultExcludedUrlList;
             storage.sync.clear().then(() => {
                 storage.sync.set({ domainList: config.defaultDomainList });
+                storage.sync.set({ excludedUrlList: config.defaultExcludedUrlList });
             });
         };
 
