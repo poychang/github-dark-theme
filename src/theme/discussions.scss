@@ -255,6 +255,10 @@ body {
             color: $link-color !important;
         }
     }
+
+    #partial-new-comment-form-actions div.bg-gray-light {
+        background-color: transparent !important;
+    }
 }
 
 .AvatarStack-body {
