@@ -1,0 +1,104 @@
+/* # Gitako Extension */
+
+.gitako-toggle-show-button-wrapper {
+    .action-icon {
+        color: $link-color!important;
+    }
+
+    &.collapsed {
+        background-color: $tag-bg-color !important;
+        border-color: $border-color !important;
+
+        .action-icon {
+            color: $link-color !important;
+        }
+    }
+}
+
+.gitako-side-bar {
+    .gitako-side-bar-body {
+        background-color: $bg-color !important;
+        border: $border-color !important;
+        color: $text-color !important;
+
+        .octicon {
+            color: $link-color !important;
+        }
+
+
+        .gitako-side-bar-content {
+            .meta-bar {
+                background-color: $dropdown-bg !important;
+                border-color: $border-color !important;
+            }
+
+            .search-input {
+                border: none !important;
+                background-color: $tag-bg-color !important;
+
+                input {
+                        color: $text-color !important;
+                }
+            }
+
+            .file-explorer .node-item{
+                background-color: $comment-bg !important;
+                border-color: $border-color !important;
+                color: $text-color !important;
+
+                &.focused,
+                &:hover {
+                    background-color: $file-row-active-bg !important;
+                }
+            }
+        }
+
+        .gitako-settings-bar {
+            background-color: $bg-color !important;
+            border-color: $border-color !important;
+            color: $text-color !important;
+
+            .header-row {
+                background-color: $dropdown-bg !important;
+                border-color: $border-color !important;
+            }
+
+            .gitako-settings-bar-title {
+                border-color: $border-color !important;
+            }
+
+            .shadow-shelter {
+                background-color: $bg-color !important;
+            }
+
+            .TextInput-wrapper,
+            select,
+            button {
+                background-color: #424549 !important;
+                border-color: $border-color !important;
+                color: $text-color !important;
+                box-shadow: none !important;
+            }
+
+            button {
+                background-image: $button-bg-image !important;
+
+                &:hover:not(:disabled) {
+                    background-image: $button-bg-image-hover !important;
+                    background-position: 0 !important;
+                }
+
+                &:disabled {
+                    color: $link-color !important;
+                    opacity: 0.5 !important;
+                    cursor: not-allowed !important;
+                }
+            }
+        }
+    }
+
+    .gitako-resize-handler {
+        background-color: $border-color !important;
+        border-color: $border-color !important;
+    }
+}
