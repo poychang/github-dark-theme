@@ -10,7 +10,8 @@
         "Poy Chang <poypost@gmail.com>",
         "Tariq <tariq.86@pm.me>",
         "Vladimir Mikhaylovskiy <vlad@indiegogo.com>",
-        "Vinyl Darkscratch <vinyldarkscratch@gmail.com> (https://www.queengoob.org)"
+        "Vinyl Darkscratch <vinyldarkscratch@gmail.com> (https://www.queengoob.org)",
+        "Benjamin Caradeuc <benjamin@caradeuc.info> (https://benjamin.caradeuc.info)"
     ],
     "scripts": {
         "serve": "live-server",
