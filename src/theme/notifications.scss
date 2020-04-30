@@ -33,7 +33,7 @@ li.notifications-list-item {
 }
 
 .notifications-list-item:hover,
-li.notifications-list-item:hover {
+li.notifications-list-item:hover,
+.Box-row--hover-gray:hover {
     background-color: $tag-bg-color !important;
 }
-
