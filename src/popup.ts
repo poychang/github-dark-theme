@@ -17,6 +17,7 @@ module app {
         public yourDomain: string;
         public yourExcludedDomain: string;
         public useDarkTheme: boolean;
+        public useSystemPreferredTheme: boolean;
 
         constructor($scope: IPopupScope) {
             this.scope = $scope;
@@ -25,10 +26,11 @@ module app {
 
         private init = () => {
             browser.storage.sync
-                .get([config.storageDomainList, config.storageExcludedUrlList])
+                .get([config.storageDomainList, config.storageExcludedUrlList, 'themeBasedOn'])
                 .then(data => {
                     this.domainList = data.domainList as string[];
                     this.excludedUrlList = data.excludedUrlList;
+                    this.useSystemPreferredTheme = data.themeBasedOn === 'system-preferred'
                     console.log(this.domainList);
                 })
                 .catch(error => {
@@ -97,6 +99,19 @@ module app {
         public toggleDarkTheme = async (value: boolean) => {
             //TODO: save config into storage
             this.useDarkTheme = value;
+        };
+
+        public toggleAutomaticThemeSwitching = async () => {
+            this.useSystemPreferredTheme = !this.useSystemPreferredTheme;
+            browser.storage.sync.set({
+                themeBasedOn: this.useSystemPreferredTheme ? 'system-preferred' : 'user-setting'
+            })
+            .then(() =>
+                {browser.storage.sync.get(['themeBasedOn'])
+                .then(data => {
+                    console.log(data.themeBasedOn)
+                })}
+            )
         };
     }
 

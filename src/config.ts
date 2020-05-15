@@ -7,6 +7,7 @@ const config = {
     excludedUrlList: [],
     defaultExcludedUrlList: ['github.com/marketplace'],
     useSystemPrefersScheme: false,
+    themeBasedOn: 'system-preferred',
     uninstallQuestionnaire:
         'https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAO__c9PL4pUQ0pFOVpUQzdLRERIQlc4RVZSSEZVSDM2OS4u',
 } as Config;
@@ -20,6 +21,7 @@ interface Config {
     excludedUrlList: string[];
     defaultExcludedUrlList: string[];
     useSystemPrefersScheme: boolean;
+    themeBasedOn: 'system-preferred' | 'user-setting';
     uninstallQuestionnaire: string;
 }
 

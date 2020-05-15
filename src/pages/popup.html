@@ -92,6 +92,14 @@
                             </tr>
                         </tbody>
                     </table>
+                    <div class="field" ng-click="ctrl.toggleAutomaticThemeSwitching()">
+                        <input
+                            ng-model="ctrl.useSystemPreferredTheme"
+                            type="checkbox"
+                            class="switch is-rounded"
+                        />
+                        <label for="switchRoundedDefault">Switch theme automatically based on system preferred scheme</label>
+                    </div>
                     <!-- <div class="field" ng-click="ctrl.toggleDarkTheme(!ctrl.useDarkTheme)">
                         <input
                             ng-model="ctrl.useDarkTheme"
