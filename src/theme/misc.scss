@@ -134,3 +134,23 @@ table.capped-list tr:nth-child(even) {
     color: $bright-text-color !important;
     border-color: $border-color !important;
 }
+
+/* Side Nav */
+.SideNav {
+    background-color: $block-bg;
+
+    .SideNav-item {
+        background-color: $block-bg !important;
+        border-color: $border-color !important;
+
+        &:hover,
+        &:active,
+        &:focus {
+            background-color: #414650 !important;
+        }
+
+        &.selected {
+            background-color: #24292e !important;
+        }
+    }
+}
