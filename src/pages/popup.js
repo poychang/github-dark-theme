@@ -17,5 +17,5 @@ chrome.storage.sync.get('isEnabled', function(result){
 
 document.getElementById('isEnabled').addEventListener('click', (event) => {
 	console.log('isEnabled was clicked');
-	(event.target.checked) ? chrome.storage.sync.set({'isEnabled' : "true"}) : chrome.storage.sync.set({'isEnabled' : "false"});	
+	chrome.storage.sync.set({'isEnabled' : (!!event.target.checked).toString()});
 });
