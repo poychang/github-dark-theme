@@ -1,7 +1,25 @@
 /* # Insights Pulse */
 
-.summary-stats li .num {
-    color: $text-color !important;
+.summary-stats li {
+    border-color: $bg-color;
+
+    a:hover {
+        background-color: #414650 !important;
+    }
+
+    .num {
+        color: $text-color !important;
+    }
+}
+
+.graph-canvas .axis {
+    line {
+        stroke: $file-row-active-bg !important;
+    }
+
+    text {
+        fill: $text-color !important;
+    }
 }
 
 .diffstat-summary strong {
@@ -13,6 +31,7 @@
 .tint-box {
     background: $comment-bg !important;
 }
+
 .capped-card-content {
     background: $comment-bg !important;
 }
@@ -66,12 +85,14 @@ table.capped-list tr:nth-child(even) {
 ::-webkit-scrollbar {
     width: 10px;
 }
+
 ::-webkit-scrollbar-track {
     -webkit-border-radius: 12px;
     border-radius: 12px;
     margin: 2px 0 2px 0;
     background-color: $scrollbar-track;
 }
+
 ::-webkit-scrollbar-thumb {
     -webkit-border-radius: 4px;
     border-radius: 4px;
