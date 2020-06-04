@@ -7,6 +7,10 @@ body {
         background-color: $link-color !important;
     }
 
+    .task-progress .task-progress-counts {
+        color: $text-color !important;
+    }
+
     .new-label {
         background-color: $comment-bg !important;
 
