@@ -54,6 +54,9 @@ body {
         border-color: $border-color !important;
         color: $link-color !important;
     }
+    .header-search-current .jump-to-field-active {
+        color: $link-color !important;
+    }
     .flash {
         background-color: $tag-bg-color !important;
         color: $link-color !important;
