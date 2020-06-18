@@ -29,7 +29,7 @@
     },
     "dependencies": {
         "@types/angular": "^1.7.0",
-        "angular": "^1.7.9",
+        "angular": "^1.8.0",
         "bulma": "^0.8.1",
         "bulma-extensions": "^6.2.7",
         "content-scripts-register-polyfill": "^1.0.1"
