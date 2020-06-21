@@ -20,6 +20,10 @@ body {
             }
         }
     }
+
+    .discussion-post .timeline-inline-comments {
+        background: $comment-bg !important;
+    }
     .discussion-item-header {
         color: $text-color !important;
     }
