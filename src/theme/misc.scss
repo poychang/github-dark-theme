@@ -52,6 +52,11 @@ table.capped-list tr:nth-child(even) {
     background-color: $private-bg !important;
 }
 
+img.network-tree {
+    filter: invert(1);
+    mix-blend-mode: lighten;
+}
+
 /* Marketplace */
 
 .MarketplaceSideNav {
