@@ -4,7 +4,8 @@
     background-color: $border-color !important;
 }
 
-.profile-rollup-wrapper + .profile-rollup-wrapper {
+.profile-rollup-wrapper + .profile-rollup-wrapper,
+.profile-rollup-summarized + .profile-rollup-summarized {
     border-color: $border-color !important;
 }
 

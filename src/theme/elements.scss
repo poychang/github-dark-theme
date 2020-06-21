@@ -7,9 +7,13 @@ body {
     .border-gray-dark {
         border-color: $border-color !important;
     }
+    .border-top,
     .border-right,
     .border-bottom,
-    .border-left {
+    .border-left,
+    .border-lg-left,
+    .BorderGrid-cell,
+    .Subhead {
         border-color: $border-color !important;
     }
     .bg-white {
@@ -91,6 +95,7 @@ body {
     }
     .gh-header-meta {
         color: $text-color !important;
+        border-color: $border-color !important;
     }
     .gh-header-meta .author {
         color: $text-color !important;
