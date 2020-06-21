@@ -1,7 +1,7 @@
 /* # Insights Pulse */
 
 .summary-stats li {
-    border-color: $bg-color;
+    border-color: $border-color !important;
 
     a:hover {
         background-color: #414650 !important;
