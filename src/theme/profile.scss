@@ -72,6 +72,10 @@
     color: $text-color !important;
 }
 
+.profile-timeline-card-wrapper {
+    border-color: transparent !important;
+}
+
 // Yearly Contributions graph
 .js-yearly-contributions {
     svg {

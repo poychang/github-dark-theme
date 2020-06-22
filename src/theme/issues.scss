@@ -29,11 +29,13 @@ body {
     }
 
     .TimelineItem:before,
-    .commits-listing:before {
+    .commits-listing:before,
+    .profile-timeline.discussion-timeline:before {
         background-color: $comment-bg;
     }
 
-    .TimelineItem-badge {
+    .TimelineItem-badge,
+    .discussion-item-icon {
         background-color: $comment-bg;
         border-color: $bg-color;
         color: $text-color;
