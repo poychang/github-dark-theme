@@ -22,6 +22,10 @@ body {
         }
     }
 
+    .comment-form-head.tabnav {
+        background-color: $dropdown-bg !important;
+    }
+
     .discussion-post .timeline-inline-comments {
         background: $comment-bg !important;
     }
