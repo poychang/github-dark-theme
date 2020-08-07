@@ -177,6 +177,11 @@ body {
     .Popover-message:after {
         border-bottom-color: $block-bg !important;
     }
+
+    .render-notice {
+        background-color: $dropdown-bg !important;
+        color: $text-color !important;
+    }
 }
 
 .cc-ext .pagehead-actions .cc-classic-cta a {
