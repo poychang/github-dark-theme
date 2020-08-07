@@ -196,3 +196,19 @@
     background-color: $dropdown-bg !important;
     border-color: $border-color !important;
 }
+
+.height-full label, .width-full label, 
+    .d-flex label, .flex-column label, 
+    .text-center label, .text-normal  label{
+    background-color: $dropdown-bg !important;
+    color: $text-color !important;
+}
+
+.signup-plan-card {
+    border: none !important;
+}
+
+.pricing-matrix-column-tier {
+    background-color: $bg-color !important;
+    color: $text-color !important;
+}
