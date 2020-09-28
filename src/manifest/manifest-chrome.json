@@ -3,7 +3,7 @@
     "name": "GitHub Dark Theme",
     "short_name": "GitHub Dark Theme",
     "description": "A Dark theme for all of GitHub based on Atom One Dark.",
-    "version": "1.1.12",
+    "version": "1.1.13",
     "browser_action": {
         "default_icon": "icons/icon.png",
         "default_popup": "app/popup.html"
