@@ -202,3 +202,7 @@ img.network-tree {
         }
     }
 }
+/* Github actions success/failure indicator */
+.octicon-check-circle-fill {
+    color: $text-green-color !important;
+}
