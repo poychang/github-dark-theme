@@ -92,3 +92,9 @@ input.tree-finder-input {
 a.js-tree-browser-result-anchor[aria-selected='true'] {
     background-color: $border-color !important;
 }
+
+/* # Jupyter Notebook */
+
+.notebook {
+    background-color: $code-bg !important;
+}
