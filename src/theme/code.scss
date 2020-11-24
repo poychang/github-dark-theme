@@ -95,7 +95,7 @@ a.js-tree-browser-result-anchor[aria-selected='true'] {
 
 /* # Jupyter Notebook */
 
-.notebook {
+.notebook .inner_cell {
     background-color: $code-bg !important;
 }
 
