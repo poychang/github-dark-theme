@@ -101,12 +101,15 @@ a.js-tree-browser-result-anchor[aria-selected='true'] {
     background-color: $code-bg !important;
 }
 
-.input_prompt,
-.output pre {
+.input_prompt{
     color: $link-color !important;
 }
 
 .input_area {
     background-color: $code-dark-bg !important;
     border: 1px solid black !important;
+}
+
+.output pre {
+    color: $text-color !important;
 }
