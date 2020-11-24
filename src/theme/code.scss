@@ -102,3 +102,8 @@ a.js-tree-browser-result-anchor[aria-selected='true'] {
 .input_prompt {
     color: $link-color !important;
 }
+
+.input_area {
+    background-color: $code-dark-bg !important;
+    border: 1px solid black !important;
+}
