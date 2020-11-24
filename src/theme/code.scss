@@ -22,7 +22,6 @@
     border-color: $border-color !important;
 }
 
-.k,
 .pl-k {
     color: #c678dd !important;
 }
@@ -112,4 +111,8 @@ a.js-tree-browser-result-anchor[aria-selected='true'] {
 
 .output pre {
     color: $text-color !important;
+}
+
+.k {
+    color: #c678dd !important;
 }
