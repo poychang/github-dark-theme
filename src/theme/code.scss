@@ -98,3 +98,7 @@ a.js-tree-browser-result-anchor[aria-selected='true'] {
 .notebook {
     background-color: $code-bg !important;
 }
+
+.input_prompt {
+    color: $link-color !important;
+}
