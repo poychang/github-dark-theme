@@ -109,8 +109,10 @@ a.js-tree-browser-result-anchor[aria-selected='true'] {
     border: 1px solid black !important;
 }
 
-.output pre {
-    color: $text-color !important;
+.output pre,
+.n,
+.mi {
+    color: $code-default-color !important;
 }
 
 .k {
