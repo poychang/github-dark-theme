@@ -6,6 +6,10 @@ import 'content-scripts-register-polyfill';
 const initGithubDarkTheme = () => {
     browser.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
         if (changeInfo.status === 'loading') {
+            // Ignore 'loading' update for pages being unloaded in Firefox
+            // Note that `url` property is set on page refresh in Firefox though `url` isn't actually changed
+            if (FIREFOX && !changeInfo.url) return;
+
             browser.storage.sync
                 .get([config.storageDomainList, config.storageExcludedUrlList])
                 .then((data) => {
