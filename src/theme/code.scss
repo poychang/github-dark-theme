@@ -134,8 +134,11 @@ a.js-tree-browser-result-anchor[aria-selected='true'] {
 }
 
 .s1,
-.s2,
+.s2 {
+    color: #98c379 !important;
+}
+
 .si,
 .se {
-    color: #98c379 !important;
+    color: #c55 !important;
 }
