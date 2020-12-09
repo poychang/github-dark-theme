@@ -1,5 +1,9 @@
 /* # Layout */
 
+html {
+    background-color: inherit;
+}
+
 body {
     background-color: $bg-color !important;
     color: $text-color !important;
