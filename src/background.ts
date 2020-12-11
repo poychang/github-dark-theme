@@ -8,7 +8,7 @@ const initGithubDarkTheme = () => {
         if (changeInfo.status === 'loading') {
             // Ignore 'loading' update for pages being unloaded in Firefox
             // Note that `url` property is set on page refresh in Firefox though `url` isn't actually changed
-            if (FIREFOX && !changeInfo.url) return;
+            if (navigator.userAgent.includes('Firefox') && !changeInfo.url) return;
 
             browser.storage.sync
                 .get([config.storageDomainList, config.storageExcludedUrlList])
