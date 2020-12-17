@@ -71,3 +71,6 @@ summary.text-gray {
     background-color: $border-color !important;
 }
 
+.notifications-list-item:hover .notification-list-item-actions li.js-notification-action .btn .octicon {
+    color: $text-color !important;
+}
