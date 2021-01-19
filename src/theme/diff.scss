@@ -55,6 +55,10 @@ tr:not(.blob-expanded) + .blob-expanded .blob-num {
     border-right: 1px solid $border-color !important;
 }
 
+.blob-num-context, .blob-code-context {
+    background-color: $bg-color !important;
+}
+
 .blob-num {
     border-right: 1px solid $border-color !important;
 }
