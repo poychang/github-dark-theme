@@ -217,6 +217,16 @@ img.network-tree {
     color: inherit !important;
 }
 
+/* Background for review comment box while reviewing */
+.js-inline-comments-container {
+    background-color: $bg-color !important;
+}
+
+/* Border for review comment box while reviewing */
+div.inline-comment-form {
+    border-color: $border-color !important;
+}
+
 /* Saved replies Write header */
 .js-write-tab, .js-preview-tab {
     background-color: $dropdown-bg !important;
