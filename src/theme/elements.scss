@@ -19,6 +19,9 @@ body {
     .bg-white {
         background-color: $bg-color !important;
     }
+    .color-bg-secondary {
+        background-color: $bg-color !important;
+    }
     .pagination {
         a,
         em:focus,
@@ -169,7 +172,6 @@ body {
         border-top-color: $block-bg !important;
     }
 
-
     .Popover-message:before {
         border-bottom-color: $border-color !important;
     }
@@ -182,7 +184,6 @@ body {
         background-color: $dropdown-bg !important;
         color: $text-color !important;
     }
-
 }
 
 .cc-ext .pagehead-actions .cc-classic-cta a {
