@@ -22,6 +22,9 @@ body {
     .color-bg-secondary {
         background-color: $bg-color !important;
     }
+    .color-text-secondary {
+        color: $text-color !important;
+    }
     .pagination {
         a,
         em:focus,
